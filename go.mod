@@ -6,6 +6,7 @@ require (
 	github.com/cosiner/argv v0.1.0
 	github.com/cpuguy83/go-md2man v1.0.10 // indirect
 	github.com/creack/pty v1.1.9
+	github.com/go-delve/delve v1.5.1
 	github.com/google/go-dap v0.4.0
 	github.com/hashicorp/golang-lru v0.5.4
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
@@ -21,3 +22,5 @@ require (
 	golang.org/x/tools v0.0.0-20191127201027-ecd32218bd7f
 	gopkg.in/yaml.v2 v2.2.1
 )
+
+replace github.com/go-delve/delve => github.com/MadHive/delve v1.5.2-0.20210105203319-39727c795470

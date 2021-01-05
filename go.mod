@@ -23,4 +23,4 @@ require (
 	gopkg.in/yaml.v2 v2.2.1
 )
 
-replace github.com/go-delve/delve => github.com/MadHive/delve v1.5.2-0.20210105203319-39727c795470
+replace github.com/go-delve/delve => github.com/MadHive/delve master

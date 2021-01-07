@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/go-delve/delve/pkg/proc"
+	"github.com/MadHive/delve/pkg/proc"
 )
 
 const (

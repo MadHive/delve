@@ -3,8 +3,8 @@ package linutil
 import (
 	"golang.org/x/arch/x86/x86asm"
 
-	"github.com/go-delve/delve/pkg/proc"
-	"github.com/go-delve/delve/pkg/proc/amd64util"
+	"github.com/MadHive/delve/pkg/proc"
+	"github.com/MadHive/delve/pkg/proc/amd64util"
 )
 
 // AMD64Registers implements the proc.Registers interface for the native/linux

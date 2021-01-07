@@ -17,10 +17,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/go-delve/delve/pkg/dwarf/godwarf"
-	"github.com/go-delve/delve/pkg/dwarf/op"
-	"github.com/go-delve/delve/pkg/dwarf/reader"
-	"github.com/go-delve/delve/pkg/goversion"
+	"github.com/MadHive/delve/pkg/dwarf/godwarf"
+	"github.com/MadHive/delve/pkg/dwarf/op"
+	"github.com/MadHive/delve/pkg/dwarf/reader"
+	"github.com/MadHive/delve/pkg/goversion"
 )
 
 var errOperationOnSpecialFloat = errors.New("operations on non-finite floats not implemented")
@@ -269,7 +269,7 @@ func (scope *EvalScope) Locals() ([]*Variable, error) {
 			}
 			v.Name = name[1:]
 			v.Flags |= VariableEscaped
-			// See https://github.com/go-delve/delve/issues/2049 for details
+			// See https://github.com/MadHive/delve/issues/2049 for details
 			if locationExpr != nil {
 				locationExpr.isEscaped = true
 				v.LocationExpr = locationExpr

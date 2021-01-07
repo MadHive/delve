@@ -6,7 +6,7 @@ import (
 	"testing"
 	"unsafe"
 
-	protest "github.com/go-delve/delve/pkg/proc/test"
+	protest "github.com/MadHive/delve/pkg/proc/test"
 )
 
 func ptrSizeByRuntimeArch() int {

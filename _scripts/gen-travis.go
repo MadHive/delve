@@ -9,7 +9,7 @@ import (
 	"os"
 	"text/template"
 
-	"github.com/go-delve/delve/pkg/goversion"
+	"github.com/MadHive/delve/pkg/goversion"
 )
 
 type arguments struct {
@@ -64,7 +64,7 @@ func main() {
 	out := bufio.NewWriter(travisfh)
 	err = template.Must(template.New("travis.yml").Parse(`language: go
 sudo: required
-go_import_path: github.com/go-delve/delve
+go_import_path: github.com/MadHive/delve
 
 os:
   - linux

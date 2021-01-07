@@ -16,8 +16,8 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/go-delve/delve/pkg/dwarf/op"
-	"github.com/go-delve/delve/pkg/dwarf/util"
+	"github.com/MadHive/delve/pkg/dwarf/op"
+	"github.com/MadHive/delve/pkg/dwarf/util"
 )
 
 const (

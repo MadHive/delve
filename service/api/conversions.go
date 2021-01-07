@@ -11,9 +11,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/go-delve/delve/pkg/dwarf/godwarf"
-	"github.com/go-delve/delve/pkg/dwarf/op"
-	"github.com/go-delve/delve/pkg/proc"
+	"github.com/MadHive/delve/pkg/dwarf/godwarf"
+	"github.com/MadHive/delve/pkg/dwarf/op"
+	"github.com/MadHive/delve/pkg/proc"
 )
 
 // ConvertBreakpoint converts from a proc.Breakpoint to

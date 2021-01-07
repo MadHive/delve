@@ -13,11 +13,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/go-delve/delve/pkg/dwarf/godwarf"
-	"github.com/go-delve/delve/pkg/dwarf/op"
-	"github.com/go-delve/delve/pkg/dwarf/reader"
-	"github.com/go-delve/delve/pkg/goversion"
-	"github.com/go-delve/delve/pkg/logflags"
+	"github.com/MadHive/delve/pkg/dwarf/godwarf"
+	"github.com/MadHive/delve/pkg/dwarf/op"
+	"github.com/MadHive/delve/pkg/dwarf/reader"
+	"github.com/MadHive/delve/pkg/goversion"
+	"github.com/MadHive/delve/pkg/logflags"
 	"golang.org/x/arch/x86/x86asm"
 )
 

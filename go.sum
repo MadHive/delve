@@ -1,5 +1,7 @@
 github.com/MadHive/delve v1.5.2-0.20210105203319-39727c795470 h1:p+/bEG4SAGscOHyls4HxxkUzbMbOZ0Et6DcbaCBnLLM=
 github.com/MadHive/delve v1.5.2-0.20210105203319-39727c795470/go.mod h1:yFAexDjGB8BX+2K3xxOLcJl2xqvqy45C1Pxc0NLeJaY=
+github.com/MadHive/delve v1.5.2-0.20210105204112-da420c064957 h1:MsxWhlHHzFXFjPWjx9UHtAxnF0Sp4+kIZzsNHMuAO+w=
+github.com/MadHive/delve v1.5.2-0.20210105204112-da420c064957/go.mod h1:HL6udr8gMvE7wVUehDqUdi+q7+bTwiPeDPCLxriLNNo=
 github.com/chzyer/logex v1.1.10/go.mod h1:+Ywpsq7O8HXn0nuIou7OrIPyXbp3wmkHB+jjWRnGsAI=
 github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e h1:fY5BOSpyZCqRo5OhCuC+XN+r/bBCmeuuJtjz+bCNIf8=
 github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e/go.mod h1:nSuG5e5PlCu98SY8svDHJxuZscDgtXS6KTTbou5AhLI=

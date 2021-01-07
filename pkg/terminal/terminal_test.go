@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/go-delve/delve/pkg/config"
+	"github.com/MadHive/delve/pkg/config"
 )
 
 type tRule struct {

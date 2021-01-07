@@ -22,13 +22,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-delve/delve/pkg/dwarf/frame"
-	"github.com/go-delve/delve/pkg/goversion"
-	"github.com/go-delve/delve/pkg/logflags"
-	"github.com/go-delve/delve/pkg/proc"
-	"github.com/go-delve/delve/pkg/proc/gdbserial"
-	"github.com/go-delve/delve/pkg/proc/native"
-	protest "github.com/go-delve/delve/pkg/proc/test"
+	"github.com/MadHive/delve/pkg/dwarf/frame"
+	"github.com/MadHive/delve/pkg/goversion"
+	"github.com/MadHive/delve/pkg/logflags"
+	"github.com/MadHive/delve/pkg/proc"
+	"github.com/MadHive/delve/pkg/proc/gdbserial"
+	"github.com/MadHive/delve/pkg/proc/native"
+	protest "github.com/MadHive/delve/pkg/proc/test"
 )
 
 var normalLoadConfig = proc.LoadConfig{true, 1, 64, 64, -1, 0}
@@ -1834,7 +1834,7 @@ func TestIssue414(t *testing.T) {
 			var err error
 			// Stepping through the runtime is not generally safe so after we are out
 			// of main.main just use Next.
-			// See: https://github.com/go-delve/delve/pull/2082
+			// See: https://github.com/MadHive/delve/pull/2082
 			if f == fixture.Source {
 				err = p.Step()
 			} else {

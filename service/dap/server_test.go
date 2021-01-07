@@ -14,12 +14,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-delve/delve/pkg/goversion"
-	"github.com/go-delve/delve/pkg/logflags"
-	protest "github.com/go-delve/delve/pkg/proc/test"
-	"github.com/go-delve/delve/service"
-	"github.com/go-delve/delve/service/dap/daptest"
-	"github.com/go-delve/delve/service/debugger"
+	"github.com/MadHive/delve/pkg/goversion"
+	"github.com/MadHive/delve/pkg/logflags"
+	protest "github.com/MadHive/delve/pkg/proc/test"
+	"github.com/MadHive/delve/service"
+	"github.com/MadHive/delve/service/dap/daptest"
+	"github.com/MadHive/delve/service/debugger"
 	"github.com/google/go-dap"
 )
 
@@ -336,7 +336,7 @@ func TestAttachStopOnEntry(t *testing.T) {
 		// will never terminate. Since we won't receive a terminate event and
 		// there are no breakpoints to stop on, we just detach.
 
-		// TODO(polina): once https://github.com/go-delve/delve/issues/2259 is
+		// TODO(polina): once https://github.com/MadHive/delve/issues/2259 is
 		// fixed, test with kill=false.
 
 		// 12 >> disconnect, << disconnect
@@ -1237,12 +1237,12 @@ func TestGlobalScopeAndVariables(t *testing.T) {
 					scopes = client.ExpectScopesResponse(t)
 					expectScope(t, scopes, 0, "Arguments", 1000)
 					expectScope(t, scopes, 1, "Locals", 1001)
-					expectScope(t, scopes, 2, "Globals (package github.com/go-delve/delve/_fixtures/internal/dir0/pkg)", 1002)
+					expectScope(t, scopes, 2, "Globals (package github.com/MadHive/delve/_fixtures/internal/dir0/pkg)", 1002)
 
 					client.VariablesRequest(1002)
 					globals := client.ExpectVariablesResponse(t)
 					expectChildren(t, globals, "Globals", 1)
-					ref := expectVarExact(t, globals, 0, "SomeVar", "<github.com/go-delve/delve/_fixtures/internal/dir0/pkg.SomeType>", hasChildren)
+					ref := expectVarExact(t, globals, 0, "SomeVar", "<github.com/MadHive/delve/_fixtures/internal/dir0/pkg.SomeType>", hasChildren)
 
 					if ref > 0 {
 						client.VariablesRequest(ref)
